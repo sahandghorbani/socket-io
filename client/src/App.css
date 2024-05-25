@@ -1,0 +1,113 @@
+/* App.css */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-width: 40rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  width: 100%;
+  margin-bottom: 4rem;
+  justify-content: flex-end;
+  position: absolute;
+  top: 2rem;
+}
+
+.inputContainer input {
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.messageContainer {
+  display: flex;
+  width: 100%;
+  position: absolute;
+  bottom: 3rem;
+}
+
+.messageInput {
+  flex: 1; /* Take up remaining space */
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  flex: 0 0 auto; /* Do not grow or shrink */
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sendMessageBtn:hover {
+  background-color: #0056b3;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 18px;
+}/* App.css */
+.cd {
+  max-height: 70vh;
+  width: 100%;
+
+}
+.messageList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  overflow: scroll;
+  position: absolute;
+  bottom: 5rem;
+  top: 5rem;
+}
+
+.message {
+  display: flex; /* Display message and time in a row */
+  align-items: center; /* Center items vertically */
+  max-width: 70%;
+  word-wrap: break-word;
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.sender {
+  align-self: flex-end;
+  background-color: #007bff;
+  color: white;
+}
+
+.receiver {
+  align-self: flex-start;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.cr {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.messageTime {
+  font-size: 12px; /* Adjust as needed */
+  color: #888; /* Light color for time */
+}
